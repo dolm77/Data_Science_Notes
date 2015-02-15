@@ -1,23 +1,23 @@
-##Course 3 Getting and Cleaning Data - Reading API's
+#Course 3 - Getting and Cleaning Data 
 
-#Reading APIís - Application Programming Interfaces
+##Reading API‚Äôs - Application Programming Interfaces
 
-Package that utilizes the APIís is the httr package
+Package that utilizes the API‚Äôs is the **httr** package
 
-Accessing Twitter from R --Allows you to access data from twitter based on the below authorization when creating an API account.
--install.packages(ìhttrî)
--library(httr)
--my app = oauth_app(ìtwitterî, key = ìyourConsumerKeyHereî, secret = ìyourConsumerSecretHereî)
--sig = sign_oauth1.0(myapp, token = ìyourTokenHereî, token_secret = ìyourTokenSecretHereî)
--homeTL = GET(ìhttps://api.twitter.com/1.1/statues/home_timeline.jsonî, sig)
+**Accessing Twitter from R** 
+* install.packages(‚Äúhttr‚Äù)
+* library(httr)
+* my app = oauth_app(‚Äútwitter‚Äù, key = ‚ÄúyourConsumerKeyHere‚Äù, secret = ‚ÄúyourConsumerSecretHere‚Äù)
+* sig = sign_oauth1.0(myapp, token = ‚ÄúyourTokenHere‚Äù, token_secret = ‚ÄúyourTokenSecretHere‚Äù)
+* homeTL = GET(‚Äúhttps://api.twitter.com/1.1/statues/home_timeline.json‚Äù, sig)
 
-Converting the json object
--json1 = content(homeTL)
--json2 = jsonlite::fromJSON(toJSON(json1))
--json[1,1:4]
+**Converting the json object**
+* json1 = content(homeTL)
+* json2 = jsonlite::fromJSON(toJSON(json1))
+* json[1,1:4]
 
-httr Package Contents
--Allows GET, POST, PUT, DELETE, requests if you are authorized
--You can authenticate with a user name or a password
--Most modern APIís use something like oauth
--httr works well with Facebook, Google, Twitter, Github, Yahoo, etc.
+**httr Package Contents**
+* Allows GET, POST, PUT, DELETE, requests if you are authorized
+* You can authenticate with a user name or a password
+* Most modern API‚Äôs use something like oauth
+* httr works well with Facebook, Google, Twitter, Github, Yahoo, etc.
