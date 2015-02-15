@@ -5,7 +5,6 @@
 Package that utilizes the API’s is the **httr** package
 
 **Accessing Twitter from R** 
-* install.packages(“httr”)
 * library(httr)
 * my app = oauth_app(“twitter”, key = “yourConsumerKeyHere”, secret = “yourConsumerSecretHere”)
 * sig = sign_oauth1.0(myapp, token = “yourTokenHere”, token_secret = “yourTokenSecretHere”)
